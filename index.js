@@ -11,15 +11,17 @@ let heady = 1
 const snakebody = []
 let tail = 0
 
+let VelocityX = 0;
+let VelocityY= 0;
 
-functiondrawGame(){
+
+
+function drawGame(){
 drawSnake();
 clearSreen();
 setTimeout(drawGame,100/ speed)
 
-for(let i=0; i < snakebody.length; i++) {
-    let part = snakebody[i]
-}
+
 
 function clearScreen() {
     ctx.fillStyle = 'black;'
@@ -28,6 +30,15 @@ function clearScreen() {
 }
 
 function drawSnake(){
-    ctx.fillStyle
+    ctx.fillStyle = 'light-blue'
+
+    for(let i=0; i < snakebody.length; i++) {
+        let part = snakebody[i]
+    }
 }
+
+
+clearScreen();
 drawGame();
+setTimeout();
+drawSnake();
