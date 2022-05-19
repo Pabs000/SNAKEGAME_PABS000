@@ -1,5 +1,5 @@
 
-body{text-align:center;
+body    {text-align:center;
     display:flex;
     flex-direction: column;
     justify-content:center;
@@ -8,26 +8,23 @@ body{text-align:center;
     padding-right: 25px;
     padding-bottom: 50px;
     padding-left: 25px;
-    h1{
-        color:green;
-        text-align:center;
-        text-size-adjust:20px;
-    }
-    
-
 }
-canvas {
+
+h1  {
+    color:green;
+    text-align:center;
+    text-size-adjust:20px;
+}
+
+canvas  {
     background-color: lightblue;
-
-}
-  canvas {
     border: 1px solid black;
     width: 550px;
     height: 475px;
     box-shadow:green 15px 20px 15px 20px;
-  }
+}
 
-h1{
+h1  {
     color:green;
     text-align:center;
     text-size-adjust:20px;
