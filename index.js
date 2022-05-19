@@ -12,14 +12,18 @@ let tail = 0
 
 
 functiondrawGame(){
-
-}
-for(let i=0; i < snakebody.length; i++) {
-    let part = snakebody[i]
-
-
+    
+clearSreen();
 setTimeout(drawGame,100/ speed)
 
-
+for(let i=0; i < snakebody.length; i++) {
+    let part = snakebody[i]
 }
+
+function clearScreen() {
+    ctx.fillStyle = 'black;'
+    ctx.fillRect(0,0,canvas.clientWidth,canvas.height);
+}
+}
+
 drawGame();
