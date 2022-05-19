@@ -2,9 +2,13 @@
 const canvas = document.getElementById('game');
 const ctx = canvas.getContext('2d');
 
-let head1 =  1
-let head2 = 1
+
+let snake = [headx,heady,snakebody]
+let headx =  1
+let heady = 1
 const snakebody = []
+let tail = 0
+
 
 
 functiondrawGame(){
