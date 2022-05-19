@@ -1,14 +1,18 @@
-div {
-  padding-top: 40px;
-  padding-right: 25px;
-  padding-bottom: 50px;
-  padding-left: 25px;
-}
+
 body{text-align:center;
     display:flex;
     flex-direction: column;
     justify-content:center;
     align-items:center;
+    padding-top: 40px;
+    padding-right: 25px;
+    padding-bottom: 50px;
+    padding-left: 25px;
+    h1{
+        color:green;
+        text-align:center;
+        text-size-adjust:20px;
+    }
     
 
 }
