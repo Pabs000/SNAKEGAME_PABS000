@@ -9,7 +9,7 @@ this.y = y;
 }
 }
 //GameBoard--------------------------------
-let speed = 1
+let speed = 5
 let tileCount = 50;
 let tileSize = canvas.width / tileCount - 5;
 //SNAKE------------------------------------
@@ -36,6 +36,9 @@ clearSreen();
 checkSquareCollect();
 drawSquare();
 drawSnake();
+
+drawScore();{}
+//-----------------------------
                                             //SCORE//-------------DIRECTLY AFFECTING THE SPEED
 if (score > 2 {
     speed =5
@@ -49,10 +52,7 @@ if (score > 7 {
 if (score > 15 {
     speed =15
 })
-
-
-
-
+}
 setTimeout(drawGame,1000/ speed)
 }
 function clearScreen() {
