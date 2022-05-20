@@ -4,14 +4,14 @@ const ctx = canvas.getContext('2d');
 
 
 //GameBoard--------------------------------
-let speed = 10
+let speed = 5
 let tileCount = 100;
 let tileSize = canvas.width / tileCount
 //SNAKE------------------------------------
-let HeadX =  10;
-let HeadY = 10;
-const snakebody = []
-let tail = 0
+let HeadX =  20;
+let HeadY = 20;
+const SnakeBody = []
+let Tail = 0
 
 
 //SPEED-----------------------------------
@@ -23,7 +23,7 @@ let score = 0
 function drawGame(){
 drawSnake();
 clearSreen();
-setTimeout(drawGame,100/ speed)
+setTimeout(drawGame,1000/ speed)
 }
 function clearScreen() {
     ctx.fillStyle = 'black;'
@@ -31,10 +31,11 @@ function clearScreen() {
 }
 function drawSnake() {
 ctx.fillStyle = "blue";
-for (let i = 0; i < snakeParts.length; i++) {
-let part = snakeParts[i];
+for (let i = 0;i<snakeBody.length;i++) 
+{
+let part = snakeBody[i];
 ctx.fillRect(part.x * tileCount, part.y * tileCount, tileSize, tileSize);
-    }
+}
 }
 
 
