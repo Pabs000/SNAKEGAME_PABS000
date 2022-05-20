@@ -21,17 +21,19 @@ let Tail = 5;
 //SPEED-----------------------------------
 let VelocityX = 0;
 let VelocityY= 0;
-let Score = 0;
-
 //gaining size as you are moving
 let SquareX = 10
 let SquareY = 10
-
-
 //Score
 let score = 0 
 
 function drawGame(){
+VelocityX = inputsVelocityX;
+VelocityY = inputsVelocityY;
+DESTROYSNAKE();
+let result =GAMEOVER();
+    if(result) {return;}
+    
 drawSnake();
 clearSreen();
 setTimeout(drawGame,1000/ speed)
