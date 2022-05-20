@@ -29,10 +29,12 @@ function clearScreen() {
     ctx.fillStyle = 'black;'
     ctx.fillRect(0,0,canvas.clientWidth,canvas.height);
 }
-function drawSnake(){
-    ctx.fillStyle = 'blue'
-    ctx.fillRect(HeadX * tileCount, HeadY* tileCount);
-
+function drawSnake() {
+ctx.fillStyle = "blue";
+for (let i = 0; i < snakeParts.length; i++) {
+let part = snakeParts[i];
+ctx.fillRect(part.x * tileCount, part.y * tileCount, tileSize, tileSize);
+    }
 }
 
 
@@ -40,15 +42,40 @@ function drawSnake(){
 document.body.addEventListener("keyup", keyUp);
 
 //up
-function keyUp(event){
-                        if (event.keyCode == )
+function keyUp(event)
 
-        
+{
+    if (event.keyCode == 38 || event.keyCode == 87) {
+   
+        if (inputsYVelocity == 1) return;
+        inputsYVelocity = -1;
+        inputsXVelocity = 0;
+      }
+    
+      //down
+      if (event.keyCode == 40 || event.keyCode == 83) {
+    
+        if (inputsYVelocity == -1) return;
+        inputsYVelocity = 1;
+        inputsXVelocity = 0;
+      }
+    
+      //left
+      if (event.keyCode == 37 || event.keyCode == 65) {
+      
+        if (inputsXVelocity == 1) return;
+        inputsYVelocity = 0;
+        inputsXVelocity = -1;
+      }
+    
+      //right
+      if (event.keyCode == 39 || event.keyCode == 68) {
 
-
-}
-            if (event.keyDown)
-
+        if (inputsXVelocity == -1) return;
+        inputsYVelocity = 0;
+        inputsXVelocity = 1;
+      }
+    }
 
 
 
