@@ -45,8 +45,8 @@ function keyUp(event)
 {
     if (event.keyCode == 38 || event.keyCode == 87) {
         if (inputsYVelocity == 1) return;
-        inputsYVelocity = -1;
-        inputsXVelocity = 0;
+        inputsVelocityY = -1;
+        inputsVelocityX = 0;
       }
     
       //down
