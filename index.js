@@ -31,19 +31,19 @@ function clearScreen() {
 }
 function drawSnake(){
     ctx.fillStyle = 'blue'
-    ctx.fillRect(HeadX * tileCount, HeadY* tileCount)
+    ctx.fillRect(HeadX * tileCount, HeadY* tileCount);
 
-                for(let i=0; i < snakebody.length; i++) {
-                    let part = snakebody[i]
-                }
 }
 
 
 
-document.body.addEventListener('keydown', keyDown);
+document.body.addEventListener("keyup", keyUp);
 
+//up
+function keyUp(event){
+                        if (event.keyCode == )
 
-FUNCTION keyDown(event){
+        
 
 
 }
