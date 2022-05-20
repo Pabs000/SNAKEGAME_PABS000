@@ -34,12 +34,9 @@ ctx.fillStyle = "blue";
 for (let i = 0;i<snakeBody.length;i++) 
 {
 let part = snakeBody[i];
-ctx.fillRect(part.x * tileCount, part.y * tileCount, tileSize, tileSize);
+ctx.fillRect(HeadX * tileCount, HeadY * tileCount, tileSize, tileSize);
 }
 }
-
-
-
 document.body.addEventListener("keyup", keyUp);
 
 //up
@@ -47,7 +44,6 @@ function keyUp(event)
 
 {
     if (event.keyCode == 38 || event.keyCode == 87) {
-   
         if (inputsYVelocity == 1) return;
         inputsYVelocity = -1;
         inputsXVelocity = 0;
@@ -55,20 +51,16 @@ function keyUp(event)
     
       //down
       if (event.keyCode == 40 || event.keyCode == 83) {
-    
         if (inputsYVelocity == -1) return;
         inputsYVelocity = 1;
         inputsXVelocity = 0;
       }
-    
       //left
       if (event.keyCode == 37 || event.keyCode == 65) {
-      
         if (inputsXVelocity == 1) return;
         inputsYVelocity = 0;
         inputsXVelocity = -1;
       }
-    
       //right
       if (event.keyCode == 39 || event.keyCode == 68) {
 
@@ -77,9 +69,6 @@ function keyUp(event)
         inputsXVelocity = 1;
       }
     }
-
-
-
 // keycodes (W,A,S,D) (87,65,83,68)/////////(UP,RIGHT,DOWN,LEFT)   (38,39,40,37)
 clearScreen();
 drawGame();
