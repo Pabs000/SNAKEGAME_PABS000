@@ -9,8 +9,6 @@ class SnakePart {
     this.y = y;
 }
 }
-
-}
 //GameBoard--------------------------------
 let speed = 5
 let tileCount = 100;
@@ -19,12 +17,15 @@ let tileSize = canvas.width / tileCount
 let SnakeHeadX =  20;
 let SnakeHeadY = 20;
 const SnakeBody = [];
-let Tail = 5
+let Tail = 5;
 //SPEED-----------------------------------
 let VelocityX = 0;
 let VelocityY= 0;
 let Score = 0;
+
 //gaining size as you are moving
+let SquareX = 10
+let SquareY = 10
 
 
 //Score
