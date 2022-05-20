@@ -1,20 +1,24 @@
-//creating game loop first 
+
 const canvas = document.getElementById('game');
 const ctx = canvas.getContext('2d');
 
-let speed = 5
-let tileCount = 50
-let tileSize = canvas.width / tileCount  -5;
-let snake = [headx,heady,snakebody,tail]
-let headx =  10
-let heady = 10
+
+//GameBoard--------------------------------
+let speed = 10
+let tileCount = 100;
+let tileSize = canvas.width / tileCount
+//SNAKE------------------------------------
+let HeadX =  10;
+let HeadY = 10;
 const snakebody = []
 let tail = 0
 
+
+//SPEED-----------------------------------
 let VelocityX = 0;
 let VelocityY= 0;
 
-
+let score = 0 
 
 function drawGame(){
 drawSnake();
@@ -31,6 +35,7 @@ function clearScreen() {
 
 function drawSnake(){
     ctx.fillStyle = 'blue'
+    ctx.fillRect(HeadX * tileCount, HeadY* tileCount)
 
     for(let i=0; i < snakebody.length; i++) {
         let part = snakebody[i]
@@ -40,6 +45,8 @@ function drawSnake(){
 
 
 document.body.addEventListener('keydown', keyDown);
+
+
 FUNCTION keyDown(event){
 
 
