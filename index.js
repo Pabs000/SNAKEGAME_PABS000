@@ -32,9 +32,27 @@ VelocityY = inputsVelocityY;
 DESTROYSNAKE();
 let result =GAMEOVER();
     if(result) {return;}
-
-drawSnake();
 clearSreen();
+checkSquareCollect();
+drawSquare();
+drawSnake();
+                                            //SCORE//-------------DIRECTLY AFFECTING THE SPEED
+if (score > 2 {
+    speed =5
+})
+if (score > 5 {
+    speed =7
+})
+if (score > 7 {
+    speed =10
+})
+if (score > 15 {
+    speed =15
+})
+
+
+
+
 setTimeout(drawGame,1000/ speed)
 }
 function clearScreen() {
@@ -50,17 +68,14 @@ ctx.fillRect(HeadX * tileCount, HeadY * tileCount, tileSize, tileSize);
 }
 }
 document.body.addEventListener("keyup", keyUp);
-
 //up
 function keyUp(event)
-
 {
     if (event.keyCode == 38 || event.keyCode == 87) {
         if (inputsYVelocity == 1) return;
         inputsVelocityY = -1;
         inputsVelocityX = 0;
       }
-    
       //down
       if (event.keyCode == 40 || event.keyCode == 83) {
         if (inputsYVelocity == -1) return;
