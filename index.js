@@ -3,16 +3,15 @@ const canvas = document.getElementById('game');
 const ctx = canvas.getContext('2d');
 
 class SnakePart {
-           constructor(x,y) {
-
-    this.x =x;
-    this.y = y;
+constructor(x,y) {
+this.x =x;
+this.y = y;
 }
 }
 //GameBoard--------------------------------
-let speed = 5
-let tileCount = 100;
-let tileSize = canvas.width / tileCount
+let speed = 1
+let tileCount = 50;
+let tileSize = canvas.width / tileCount - 5;
 //SNAKE------------------------------------
 let SnakeHeadX =  20;
 let SnakeHeadY = 20;
@@ -33,7 +32,7 @@ VelocityY = inputsVelocityY;
 DESTROYSNAKE();
 let result =GAMEOVER();
     if(result) {return;}
-    
+
 drawSnake();
 clearSreen();
 setTimeout(drawGame,1000/ speed)
