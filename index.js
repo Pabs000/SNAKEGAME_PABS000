@@ -41,19 +41,20 @@ drawScore();{}
 
 //-----------------------------
                                             //SCORE//-------------DIRECTLY AFFECTING THE SPEED
-if (score > 2 {
+if (score > 2) {
     speed =5
-})
-if (score > 5 {
-    speed =7
-})
-if (score > 7 {
-    speed =10
-})
-if (score > 15 {
-    speed =15
-})
 }
+if (score > 5) {
+    speed =7
+}
+if (score > 7) {
+    speed =10
+}
+if (score > 15) {
+    speed =15
+}
+}
+{
 setTimeout(drawGame,1000/ speed)
 }
 function clearScreen() {
