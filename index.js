@@ -37,6 +37,8 @@ checkSquareCollect();
 drawSquare();
 drawSnake();
 drawScore();{}
+
+
 //-----------------------------
                                             //SCORE//-------------DIRECTLY AFFECTING THE SPEED
 if (score > 2 {
