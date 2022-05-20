@@ -36,7 +36,6 @@ clearSreen();
 checkSquareCollect();
 drawSquare();
 drawSnake();
-
 drawScore();{}
 //-----------------------------
                                             //SCORE//-------------DIRECTLY AFFECTING THE SPEED
