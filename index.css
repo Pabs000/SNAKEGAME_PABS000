@@ -1,15 +1,11 @@
 
-body    {text-align:center;
-    display:flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items:center;
+body    {
+    text-align:center;
     padding-top: 5px;
     padding-right: 2px;
     padding-bottom: 5px;
     padding-left: 2px;
 }
-
 h1  {
     color:gray;
     text-align:center;

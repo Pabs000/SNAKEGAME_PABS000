@@ -2,22 +2,32 @@
 const canvas = document.getElementById('game');
 const ctx = canvas.getContext('2d');
 
+class SnakePart {
+           constructor(x,y) {
 
+    this.x =x;
+    this.y = y;
+}
+}
+
+}
 //GameBoard--------------------------------
 let speed = 5
 let tileCount = 100;
 let tileSize = canvas.width / tileCount
 //SNAKE------------------------------------
-let HeadX =  20;
-let HeadY = 20;
-const SnakeBody = []
-let Tail = 0
-
-
+let SnakeHeadX =  20;
+let SnakeHeadY = 20;
+const SnakeBody = [];
+let Tail = 5
 //SPEED-----------------------------------
 let VelocityX = 0;
 let VelocityY= 0;
+let Score = 0;
+//gaining size as you are moving
 
+
+//Score
 let score = 0 
 
 function drawGame(){
@@ -70,7 +80,4 @@ function keyUp(event)
       }
     }
 // keycodes (W,A,S,D) (87,65,83,68)/////////(UP,RIGHT,DOWN,LEFT)   (38,39,40,37)
-clearScreen();
 drawGame();
-setTimeout();
-drawSnake();
