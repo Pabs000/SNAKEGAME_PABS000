@@ -24,22 +24,18 @@ function drawGame(){
 drawSnake();
 clearSreen();
 setTimeout(drawGame,100/ speed)
-
-
-
+}
 function clearScreen() {
     ctx.fillStyle = 'black;'
     ctx.fillRect(0,0,canvas.clientWidth,canvas.height);
 }
-}
-
 function drawSnake(){
     ctx.fillStyle = 'blue'
     ctx.fillRect(HeadX * tileCount, HeadY* tileCount)
 
-    for(let i=0; i < snakebody.length; i++) {
-        let part = snakebody[i]
-    }
+                for(let i=0; i < snakebody.length; i++) {
+                    let part = snakebody[i]
+                }
 }
 
 
