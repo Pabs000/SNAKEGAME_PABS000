@@ -3,11 +3,11 @@ const canvas = document.getElementById('game');
 const ctx = canvas.getContext('2d');
 
 class SnakePart {
-constructor(x,y) {
+constructor(x,y) }{
 this.x =x;
 this.y = y;
 }
-}
+
 //GameBoard--------------------------------
 let speed = 5
 let tileCount = 50;
@@ -32,13 +32,11 @@ VelocityY = inputsVelocityY;
 DESTROYSNAKE();
 let result =GAMEOVER();
     if(result) {return;}
-clearSreen();
+clearScreen();
 checkSquareCollect();
 drawSquare();
 drawSnake();
-drawScore();{}
-
-
+drawScore();{
 //-----------------------------
                                             //SCORE//-------------DIRECTLY AFFECTING THE SPEED
 if (score > 2) {
@@ -54,6 +52,7 @@ if (score > 15) {
     speed =15
 }
 }
+}
 {
 setTimeout(drawGame,1000/ speed)
 }
@@ -63,9 +62,9 @@ function clearScreen() {
 }
 function drawSnake() {
 ctx.fillStyle = "blue";
-for (let i = 0;i<snakeBody.length;i++) 
+for (let i = 0;i<SnakeBody.length;i++) 
 {
-let part = snakeBody[i];
+let part = SnakeBody[i];
 ctx.fillRect(HeadX * tileCount, HeadY * tileCount, tileSize, tileSize);
 }
 }
