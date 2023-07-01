@@ -8,7 +8,6 @@ class SnakePart {
   this.y = y;
   }
   
-
 let SnakeHeadX =  20;
 let SnakeHeadY = 20;
 const SnakeBody = [];
